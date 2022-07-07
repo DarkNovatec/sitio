@@ -1,0 +1,38 @@
+/************************************************************************************
+smaller than 768
+*************************************************************************************/
+@media(max-width: 768px) {
+	
+	.menup label{
+		display: block;
+	}
+	.menu{
+		position: absolute;
+		background: #56D872;
+		width: 30%;
+		height: 100%;
+		margin-left: -70%;
+		transition: all 0.5s;
+	}
+	.menu ul{
+		flex-direction: column;
+	}
+	#btn-menu:checked ~ .menu{
+		margin: 0;
+	}
+
+	.menu li:hover{
+	cursor: pointer;
+	background: rgba(0,0,0,0.3);
+	width: 190%;
+	}
+	footer iframe{
+		width: 400px; 
+		height: 300px; 
+		border: 2px;
+	}
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
